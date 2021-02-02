@@ -1,1 +1,10 @@
-<p>Meu código é {{meuCodigo}}</p>
+<div class="form">
+    <div class="form-group">
+        <label>Nome da Tarefa </label>
+        <input [(ngModel)]="task.name"/>
+
+        <label>Tarefa concluida?</label>
+        <input type="checkbox" [(ngModel)]="task.completed" />
+    </div>
+    <button (click)="save()">Salvar</button>
+</div>

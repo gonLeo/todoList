@@ -7,6 +7,7 @@ import { ListComponent } from './tasks/list/list.component';
 import { FormComponent } from './tasks/form/form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpRequestInterceptorModule } from './shared/interceptors/interceptors.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,8 @@ import { HttpRequestInterceptorModule } from './shared/interceptors/interceptors
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     HttpRequestInterceptorModule
   ],
